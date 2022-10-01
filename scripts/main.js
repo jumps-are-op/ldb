@@ -1,7 +1,7 @@
 global.ldbTipNo = function(tip, cell) {
 	if (Vars.net.client()) {
-		cell.disabled(true);
-		cell.tooltip("not on client");
+		cell.disabled(false);
+		cell.tooltip("You gonna desync if you did this");
 	} else {
 		if (!(tip === undefined)) {
 			cell.tooltip(tip);
@@ -10,4 +10,3 @@ global.ldbTipNo = function(tip, cell) {
 };
 require("ldb/mem");
 require("ldb/proc");
-require("ldb/disp");
